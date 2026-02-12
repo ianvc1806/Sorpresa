@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>San Valentín 🐰💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="stage">
+
+    <!-- SOBRE + CARTA (AL INICIO SOLO SOBRE) -->
+    <section class="mail">
+      <button class="open-btn" id="openBtn" type="button" aria-label="Abrir sobre">
+        <div class="mail-inner" id="mailInner">
+
+          <!-- SOBRE (líneas negras como tu imagen) -->
+          <div class="envelope" aria-hidden="true">
+            <svg viewBox="0 0 520 320" class="env-svg">
+              <rect x="10" y="10" width="500" height="300" class="env-stroke" fill="white"/>
+              <line x1="10"  y1="10"  x2="260" y2="180" class="env-line"/>
+              <line x1="510" y1="10"  x2="260" y2="180" class="env-line"/>
+              <line x1="10"  y1="310" x2="260" y2="180" class="env-line"/>
+              <line x1="510" y1="310" x2="260" y2="180" class="env-line"/>
+            </svg>
+          </div>
+
+          <!-- CARTA (OCULTA AL INICIO) -->
+          <div class="paper hidden-paper" id="paper">
+            <div class="paper-head">
+              <span class="paper-badge">💌 Carta secreta</span>
+            </div>
+
+            <div class="paper-body">
+              <div class="bunnies">
+                <div class="bunny">
+                  <!-- conejo estilo imagen -->
+                  <svg class="bunny-face" viewBox="0 0 120 120" aria-hidden="true">
+                    <ellipse cx="44" cy="22" rx="12" ry="20" class="fur stroke"/>
+                    <ellipse cx="76" cy="22" rx="12" ry="20" class="fur stroke"/>
+                    <ellipse cx="44" cy="24" rx="7"  ry="13" class="inner"/>
+                    <ellipse cx="76" cy="24" rx="7"  ry="13" class="inner"/>
+                    <circle cx="60" cy="64" r="32" class="fur stroke"/>
+                    <circle cx="38" cy="70" r="10" class="cheek"/>
+                    <circle cx="82" cy="70" r="10" class="cheek"/>
+                    <circle cx="50" cy="58" r="7.2" class="eye"/>
+                    <circle cx="70" cy="58" r="7.2" class="eye"/>
+                    <circle cx="47.8" cy="55.8" r="2.4" class="shine"/>
+                    <circle cx="67.8" cy="55.8" r="2.4" class="shine"/>
+                    <circle cx="60" cy="66" r="3" class="nose"/>
+                    <path d="M52 72 C56 78, 64 78, 68 72" class="smile"/>
+                  </svg>
+                </div>
+
+                <div class="mid-heart">❤</div>
+
+                <div class="bunny">
+                  <svg class="bunny-face flip" viewBox="0 0 120 120" aria-hidden="true">
+                    <ellipse cx="44" cy="22" rx="12" ry="20" class="fur stroke"/>
+                    <ellipse cx="76" cy="22" rx="12" ry="20" class="fur stroke"/>
+                    <ellipse cx="44" cy="24" rx="7"  ry="13" class="inner"/>
+                    <ellipse cx="76" cy="24" rx="7"  ry="13" class="inner"/>
+                    <circle cx="60" cy="64" r="32" class="fur stroke"/>
+                    <circle cx="38" cy="70" r="10" class="cheek"/>
+                    <circle cx="82" cy="70" r="10" class="cheek"/>
+                    <circle cx="50" cy="58" r="7.2" class="eye"/>
+                    <circle cx="70" cy="58" r="7.2" class="eye"/>
+                    <circle cx="47.8" cy="55.8" r="2.4" class="shine"/>
+                    <circle cx="67.8" cy="55.8" r="2.4" class="shine"/>
+                    <circle cx="60" cy="66" r="3" class="nose"/>
+                    <path d="M52 72 C56 78, 64 78, 68 72" class="smile"/>
+                  </svg>
+                </div>
+              </div>
+
+              <p class="tap">Carta desbloqueada 💞</p>
+            </div>
+          </div>
+
+        </div>
+      </button>
+
+      <p class="small">Toca / clic en el sobre para abrir 💘</p>
+    </section>
+
+    <!-- TARJETA FINAL -->
+    <section class="card hidden" id="card">
+      <div class="bunnies top">
+        <div class="bunny">
+          <svg class="bunny-face" viewBox="0 0 120 120" aria-hidden="true">
+            <ellipse cx="44" cy="22" rx="12" ry="20" class="fur stroke"/>
+            <ellipse cx="76" cy="22" rx="12" ry="20" class="fur stroke"/>
+            <ellipse cx="44" cy="24" rx="7"  ry="13" class="inner"/>
+            <ellipse cx="76" cy="24" rx="7"  ry="13" class="inner"/>
+            <circle cx="60" cy="64" r="32" class="fur stroke"/>
+            <circle cx="38" cy="70" r="10" class="cheek"/>
+            <circle cx="82" cy="70" r="10" class="cheek"/>
+            <circle cx="50" cy="58" r="7.2" class="eye"/>
+            <circle cx="70" cy="58" r="7.2" class="eye"/>
+            <circle cx="47.8" cy="55.8" r="2.4" class="shine"/>
+            <circle cx="67.8" cy="55.8" r="2.4" class="shine"/>
+            <circle cx="60" cy="66" r="3" class="nose"/>
+            <path d="M52 72 C56 78, 64 78, 68 72" class="smile"/>
+          </svg>
+        </div>
+
+        <div class="mid-heart">❤</div>
+
+        <div class="bunny">
+          <svg class="bunny-face flip" viewBox="0 0 120 120" aria-hidden="true">
+            <ellipse cx="44" cy="22" rx="12" ry="20" class="fur stroke"/>
+            <ellipse cx="76" cy="22" rx="12" ry="20" class="fur stroke"/>
+            <ellipse cx="44" cy="24" rx="7"  ry="13" class="inner"/>
+            <ellipse cx="76" cy="24" rx="7"  ry="13" class="inner"/>
+            <circle cx="60" cy="64" r="32" class="fur stroke"/>
+            <circle cx="38" cy="70" r="10" class="cheek"/>
+            <circle cx="82" cy="70" r="10" class="cheek"/>
+            <circle cx="50" cy="58" r="7.2" class="eye"/>
+            <circle cx="70" cy="58" r="7.2" class="eye"/>
+            <circle cx="47.8" cy="55.8" r="2.4" class="shine"/>
+            <circle cx="67.8" cy="55.8" r="2.4" class="shine"/>
+            <circle cx="60" cy="66" r="3" class="nose"/>
+            <path d="M52 72 C56 78, 64 78, 68 72" class="smile"/>
+          </svg>
+        </div>
+      </div>
+
+      <h1 class="title">¿Quieres ser mi San Valentín?</h1>
+      <p class="subtitle">Prometo risas, antojitos y muchos abrazos 🥺💖</p>
+
+      <div class="buttons" id="buttonsArea">
+        <button id="yesBtn" class="btn yes">Sí 💚</button>
+        <button id="noBtn" class="btn no">No 💔</button>
+      </div>
+
+      <p class="msg" id="msg" aria-live="polite"></p>
+      <p class="hint">Tip: intenta decir “No”… si puedes 😼</p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
